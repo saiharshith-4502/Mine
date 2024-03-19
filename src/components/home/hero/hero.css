@@ -1,0 +1,49 @@
+.hero{
+    background-image: url(../../../../public/Images/642bf9b0e768a1680603568.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20%;
+    padding-right: 50%;
+    color: #fff;
+    /* background-color: rgb(243, 167, 109); */
+}
+
+.row.test {
+    background-color: rgba(255, 215, 185, 0.7);
+}
+
+.hero #heading h3{
+    color: black;
+    font-weight: 600;
+}
+
+.hero #heading{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:768px) {
+    .margin {
+        height: 40vh;
+    }
+    .hero{
+        background-position: right ;
+        padding: 50%;
+        height: 80vh;
+    }
+    /* .hero {
+        width: 100%;
+    } */
+    .row {
+        padding: 100px; /* Adjust padding for smaller screens */
+      }
+    
+    
+}

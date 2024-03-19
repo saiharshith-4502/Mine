@@ -1,0 +1,134 @@
+.aboutHome {
+    height: auto;
+    padding: 50px 0;
+    margin-top: -80px;
+}
+
+.aboutHome #heading {
+    text-align: left;
+    padding: 0;
+  }
+
+.container {
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.left img {
+    width: 600px;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.right .items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutHome .item {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+    transition: 0.5s;
+  }
+.item {
+    display: flex; /* Display items in a row */
+    align-items: center; /* Center items vertically */
+}
+
+.item.flexSB {
+    justify-content: space-between; /* Space between icon and text for the first item */
+}
+
+.img {
+    width: 200px;
+}
+
+
+.img img {
+    width: 70px;
+    height: 70px;
+}
+
+.text {
+    margin-left: 20px; /* Add space between image and text */
+
+}
+
+.text h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.right .title {
+    text-align: left;
+}
+
+.aboutHome .item:hover {
+    background-color: rgb(245, 127, 38);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+    transition: 0.5s;
+  }
+
+.aboutHome .item:hover p {
+    color: #fff;
+    transition: 0.5s;
+  }
+
+
+  /* ------------------Awrapper---------------------- */
+.awrapper{
+    background-image: url("/public/Images/awrapper.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    color: #fff;
+  }
+.awrapper .box{
+    padding: 70px 0px;
+  }
+.awrapper img{
+    margin-right: 30px;
+    margin-top: 5px;
+  }
+.awrapper h1{
+    font-size: 50px;
+    margin-left: -120px;
+}
+.awrapper h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: -120px;
+}
+@media screen and (max-width: 768px) {
+    .aboutHome{
+        margin-top: 80%;
+    }
+    .aboutHome .container {
+      flex-direction: column-reverse;
+    }
+    .aboutHome .row {
+      width: 100%;
+    }
+    .awrapper {
+      height: 50vh;
+    }
+  }

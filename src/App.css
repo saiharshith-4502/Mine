@@ -1,14 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: #858484; */
+  background-color: #f8f8f8;
+}
+/*------------global-----------*/
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  color: rgb(245, 127, 38);
+  transition: 0.5s;
+}
+.icon:hover{
+  cursor: pointer;
+  background-color: rgb(245, 127, 38);
+  color: #fff;
+  line-height: 40px;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+button {
+  border: none;
+}
 
-*{
+.row{
+  /* width: 50%; */
+  color: black;
+  /* background-color: rgb(255, 215, 185, 0.7); */
+  padding: 30px;
+  border-radius: 10px;
+}
 
-    padding: 0;margin: 0;box-sizing: border-box;
+.row h1 {
+  font-size: 36px;
+  margin-bottom: 0px;
+}
 
+.row p {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+button{
+  padding: 17px 30px;
+  background-color: #fff;
+  color: rgb(245, 127, 38);
+  font-weight: 600;
+  border: none;
+  margin: 30px 10px 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 24px 36px -11px rgba(0, 0, 0, 9%);
+}
+
+button i{
+  margin-left: 20px;
+}
+
+button:hover{
+  box-shadow: none;
+}
+
+.primary-btn{
+  background-color: rgb(245, 127, 38);
+  color: #fff;
+}
+#heading{
+  text-align: center;
+  padding: 40px 0;
+}
+#heading h3{
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(245, 127, 38);
+  text-transform: uppercase;
+}
+#heading h1{
+  font-size: 45px;
+  margin: 20px 0;
+  text-transform: capitalize;
+
+}
+p{
+  line-height: 30px;
+  font-style: 18px;
+}
+
+.back{
+  text-align: center;
+  background-image: url(/public/Images/about.avif);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  padding-top: 30%;
+  /* padding-right: 50%; */
+  color: #fff;
+  
+}
+
+.back h1{
+  font-style: 100px;
+  font-weight: 400;
+  font-size: 80px;
+}
+
+.back h2{
+  font-weight: 500;
+  font-style: 17px;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.margin{
+  margin-top: 40.3%;
 }
 
 
-body {
-
-  font-family: "Roboto", sans-serif;
-
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 30px;
+}
+.flex{
+  display: flex;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+}
+@media screen and (max-width: 768px){
+  .grid2,
+  .grid3,
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .back {
+    background-position: center;
+    padding-top: 50%;
+    height: 80vh;
+  }
 }
